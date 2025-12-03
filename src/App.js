@@ -4,6 +4,8 @@ import Login from "./components/Login"
 import Weather from "./components/Weather"
 import Todos from "./components/Todos"
 import Quotes from "./components/Quotes"
+import "./App.css";
+import Time from "./components/Time"
 
 
 const App = () => {
@@ -31,8 +33,9 @@ const App = () => {
       : <Login onLogin={handleLogin}/>
     }
     <Quotes />
-    <Weather />
+    <Weather /> 
     <Todos />
+    <Time />
     </div>
   )
 }
