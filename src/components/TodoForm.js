@@ -14,7 +14,7 @@ const TodoForm = ({onSave}) => {
   }
   return (
     <div id="todo-form">
-      <h2>할일 내용을 입력하세요</h2>
+      {/* <h2>할일 내용을 입력하세요</h2> */}
       <form onSubmit={handlesubmit}>
       <input
       type="text"
@@ -22,6 +22,7 @@ const TodoForm = ({onSave}) => {
       onChange={(e)=>{setTask(e.target.value)}}
       // onKeyDown={handlekeydown}
       />
+      <button>확인</button>
       </form>
     </div>
   )

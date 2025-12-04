@@ -38,6 +38,8 @@ const Todoos = () => {
       return list.id == id ? { ...list, done: !list.done } : list;
     });
     setTodos(update);
+    // const [showInput,setShowInput] = useState(false);
+    
   }
     return (
       <div id="todo-page">

@@ -26,16 +26,22 @@ const App = () => {
     const saved =localStorage.getItem("USER_NAME");
     setUserName(saved);
   },[])
+  const [main,setMain] =useState(false);
+  const handleMain = ()=>{
+
+  }
   return (
-    <div id="app"> 
+    <div id="app">
+      <Time />
     {
       userName ? <Hello user={userName} onLogout={handleLogout}/> 
       : <Login onLogin={handleLogin}/>
     }
-    <Quotes />
+    
+    
     <Weather /> 
     <Todos />
-    <Time />
+    <Quotes />
     </div>
   )
 }

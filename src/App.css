@@ -6,7 +6,109 @@
 
 #root{
   height: 100vh;
-  /* background-image: url(./image/nightsky.jpg); */
+  background-image: url(./image/nightsky.jpg);
   background-size: cover;
   background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+
+#app{
+  width: 100vw;
+}
+
+#weather-page{
+position: absolute;
+top: 0;
+left: 0;
+color:  #fff;
+}
+
+#today{
+  display: flex;
+  justify-content: center;
+  font-size: 120px;
+  font-weight: bolder;
+  margin-bottom: 2rem;
+}
+
+#hello-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  p{
+    font-size: 20px;
+  }
+  button{
+    background-color:  #383F68;
+    color: #fff;
+    padding: 0.3rem 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-left: 1rem;
+  }
+}
+
+#login-page{
+  h2{
+    margin-bottom: 1rem;
+  }
+  input{
+    background-color: transparent;
+    border-width: 0px;
+    border-bottom: 2px solid #fff;
+    padding: 0.5rem 0.2rem;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    &:focus{
+      outline: none;
+    }
+  }
+    button{
+    background-color: #383F68;
+    padding: 0.3rem 1rem;
+    color: #fff;
+    border-radius: 10px;
+    margin-left: 1rem;
+  }
+}
+
+#quote-page{
+  width: 100%;
+  position: absolute;
+  bottom: 5rem;
+  /* text-align: center; */
+  p{
+    /* display: inline-block; */
+    text-align: center;
+  }
+}
+
+#todo-form{
+  display: none;
+  input{
+    background-color: transparent;
+    border-width: 0px;
+    border-bottom: 2px solid #fff;
+    padding: 0.5rem 0.2rem;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+      &:focus{
+      outline: none;
+    }
+  }
+    button{
+    background-color: #383F68;
+    padding: 0.3rem 1rem;
+    color: #fff;
+    border-radius: 10px;
+    margin-left: 1rem;
+  }
 }
